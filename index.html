@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores de Alepo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      background: #8b5e3c;
+      color: white;
+      width: 250px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .castle {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #a06b46;
+    }
+
+    main {
+      margin-left: 250px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #4a2f1e;
+    }
+
+    @media (max-width: 768px) {
+      aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: none;
+      }
+
+      nav a {
+        margin: 5px;
+        padding: 10px 15px;
+      }
+
+      .castle {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <div class="castle">🏰 Castelo de Alepo</div>
+    <nav>
+      <a href="#sobre">Sobre Alepo</a>
+      <a href="#historia">História da Alepo em comida</a>
+      <a href="#pequeno-almoco">Pequeno-Almoço</a>
+      <a href="#pratos">Pratos Principais</a>
+      <a href="#doces">Doces e Sobremesas</a>
+      <a href="#encomendar">Encomendar</a>
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#componentes">Componentes</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Alepo</h2>
+      <p>Alepo é uma das cidades mais antigas do mundo, com uma herança cultural rica e uma culinária única.</p>
+    </section>
+
+    <section id="historia">
+      <h2>História da Alepo em comida</h2>
+      <p>A gastronomia de Alepo reflete séculos de trocas culturais e tradição, marcada por especiarias e pratos lentos e ricos.</p>
+    </section>
+
+    <section id="pequeno-almoco">
+      <h2>Pequeno-Almoço</h2>
+      <p>Inclui pratos como hummus, labneh, za'atar com azeite e pão sírio fresco.</p>
+    </section>
+
+    <section id="pratos">
+      <h2>Pratos Principais</h2>
+      <p>Destacam-se o kebab halabi, yalanji (folhas de uva recheadas), e o famoso mujaddara.</p>
+    </section>
+
+    <section id="doces">
+      <h2>Doces e Sobremesas</h2>
+      <p>Baklava, maamoul e halawet el-jibn são doces típicos da região.</p>
+    </section>
+
+    <section id="encomendar">
+      <h2>Encomendar</h2>
+      <p>Você poderá fazer encomendas personalizadas para eventos, festas ou refeições familiares.</p>
+    </section>
+
+    <section id="ingredientes">
+      <h2>Ingredientes</h2>
+      <p>Especiarias como sumac, za'atar, pimenta síria, nozes, hortelã, alho, berinjela, carne de cordeiro e muito mais.</p>
+    </section>
+
+    <section id="componentes">
+      <h2>Componentes</h2>
+      <p>Cada prato é composto com equilíbrio de sabor, textura e tradição.</p>
+    </section>
+  </main>
+</body>
+</html>
 
