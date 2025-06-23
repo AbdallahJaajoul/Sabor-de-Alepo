@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
   <title>Sabores de Alepo</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://raw.githubusercontent.com/AbdallahJaajoul/Biscuit/main/293406571_464018015726261_7839916373839900193_n.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .contacto {
+      text-align: center;
+      margin-top: auto;
+      padding-bottom: 40px;
+    }
+
+    .contacto p {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <aside>
-    <div class="castle">🏰 Menu </div>
-    <nav>
-    <ul>
-      <li><a href="Sobre Alepo.html">Sobre Alepo</a></li>
-      <li><a href="História de Alepo em comida.html">História da Alepo em comida</a></li>
-      <li><a href="pequeno almoço.html">Pequeno-Almoço</a></li>
-      <li><a href="pratos principais.html">Pratos Principais</a></li>
-      <li><a href="Doces e sobremesas.html">Doces e Sobremesas</a></li>
-      <li><a href="Encomendar.html">Encomendar</a></li>
-      <li><a href="Ingredientes e os componentes.html">Ingredientes e os Componentes</a></li>
-    </ul>
-    </nav>
-  </aside>
+  <div class="overlay">
+    <!-- Cabeçalho com menu -->
+    <header>
+      <div style="display: flex; align-items: center;">
+        <img src="https://raw.github.com/AbdallahJaajoul/Sabor-de-Alepo/main/2298795994_0cd9da31ec_b.jpg" alt="Logo Alepo" style="height: 50px; border-radius: 50%; margin-right: 10px;">
+        <h1 style="margin: 0; color: #fff">Sabores de Alepo</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Sobre Alepo.html">Sobre Alepo</a></li>
+          <li><a href="História de Alepo em comida.html">História da Alepo em comida</a></li>
+          <li><a href="pequeno almoço.html">Pequeno-Almoço</a></li>
+          <li><a href="pratos principais.html">Pratos Principais</a></li>
+          <li><a href="Doces e sobremesas.html">Doces e Sobremesas</a></li>
+          <li><a href="Encomendar.html">Encomendar</a></li>
+          <li><a href="Ingredientes e os componentes.html">Ingredientes e Componentes</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h1>Bem-vindo à Plataforma Sabores de Alepo</h1>
-    <p>Explore a riqueza culinária da cidade de Alepo, Síria — um verdadeiro tesouro gastronômico.</p>
-  </main>
+    <!-- Contato no centro -->
+    <div class="contacto">
+      <p>Email: <a href="mailto:saboresdealepo@gmail.com" style="color: #ffd699;">saboresdealepo@gmail.com</a></p>
+      <p>Telefone: 930668018 (custo de chamada nacional)</p>
+      <p><strong>Morada:</strong><br>
+      Rua das Especiarias, 100<br>
+      Bairro Oriental, 4510-526<br>
+      Gondomar, Portugal</p>
+    </div>
+  </div>
 </body>
 </html>
